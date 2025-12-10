@@ -96,7 +96,8 @@ PROJECT-WEB-2025/
 │ ├── images/ # Aset Gambar & Upload User 
 │ ├── js/ # Script JavaScript 
 │ └── lib/ # Library (GLightbox, OwlCarousel)
-└── database/ # File SQL Database ...
+└── database/ # File SQL Database
+```
 
 ---
 
@@ -118,6 +119,7 @@ Dikembangkan oleh **Dwiky Ade**.
 Terima kasih khusus kepada pengurus **Sanggar Sekar Kemuning** atas kerjasama dan masukannya dalam pengembangan sistem ini.
 
 ---
+
 
 
 
