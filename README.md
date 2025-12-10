@@ -95,7 +95,8 @@ PROJECT-WEB-2025/
 │ ├── css/ # Stylesheet 
 │ ├── images/ # Aset Gambar & Upload User 
 │ ├── js/ # Script JavaScript 
-│ └── lib/ # Library (GLightbox, OwlCarousel) ...
+│ └── lib/ # Library (GLightbox, OwlCarousel)
+└── database/ # File SQL Database ...
 
 ---
 
@@ -117,6 +118,7 @@ Dikembangkan oleh **Dwiky Ade**.
 Terima kasih khusus kepada pengurus **Sanggar Sekar Kemuning** atas kerjasama dan masukannya dalam pengembangan sistem ini.
 
 ---
+
 
 
 
