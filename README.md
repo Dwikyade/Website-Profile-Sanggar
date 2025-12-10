@@ -113,12 +113,13 @@ Untuk masuk ke dashboard admin, gunakan kredensial berikut (jika menggunakan dat
 
 ## 🤝 Kontribusi & Kredit
 
-Proyek ini dikembangkan sebagai bagian dari [Tugas Matakuliah Sekaligus Sebagai Portofolio Saya].
+Proyek ini dikembangkan sebagai bagian dari **Tugas Matakuliah Sekaligus Sebagai Portofolio Saya**.
 Dikembangkan oleh **Dwiky Ade**.
 
 Terima kasih khusus kepada pengurus **Sanggar Sekar Kemuning** atas kerjasama dan masukannya dalam pengembangan sistem ini.
 
 ---
+
 
 
 
