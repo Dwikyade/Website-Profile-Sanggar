@@ -10,7 +10,7 @@ Sebuah platform web dinamis yang dirancang untuk **Sanggar Seni Sekar Kemuning**
 
 ## 📸 Screenshot
 
-*(Tambahkan screenshot website di sini. Contoh: Tampilan Beranda, Galeri, dan Dashboard Admin)*
+*(Tampilan Beranda, Galeri, dan Dashboard Admin)*
 
 | Halaman Beranda | Dashboard Admin |
 | :---: | :---: |
@@ -118,5 +118,6 @@ Dikembangkan oleh **Dwiky Ade**.
 Terima kasih khusus kepada pengurus **Sanggar Sekar Kemuning** atas kerjasama dan masukannya dalam pengembangan sistem ini.
 
 ---
+
 
 
