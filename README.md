@@ -92,12 +92,9 @@ PROJECT-WEB-2025/
 ├── admin/ # Halaman Dashboard & Modul Manajemen (CRUD) 
 ├── config/ # Koneksi Database & Konstanta 
 ├── public/ # Halaman Publik (Frontend) 
-│ 
-├── css/ # Stylesheet 
-│ 
-├── images/ # Aset Gambar & Upload User 
-│ 
-├── js/ # Script JavaScript 
+│ ├── css/ # Stylesheet 
+│ ├── images/ # Aset Gambar & Upload User 
+│ ├── js/ # Script JavaScript 
 │ 
 └── lib/ # Library (GLightbox, OwlCarousel) ...
 
@@ -121,4 +118,5 @@ Dikembangkan oleh **Dwiky Ade**.
 Terima kasih khusus kepada pengurus **Sanggar Sekar Kemuning** atas kerjasama dan masukannya dalam pengembangan sistem ini.
 
 ---
+
 
