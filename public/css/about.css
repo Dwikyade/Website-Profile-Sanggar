@@ -1,0 +1,366 @@
+
+/* Styles specific to the About Us page or general content sections */
+.item{
+    background:#fff;
+    text-align: center;
+    padding:30px 25px;
+    box-shadow: 0 0 25px #F5C000;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    margin-top: -2rem;
+    border:5px solid #F5C000;
+    -webkit-transition:all 0.5s ease 0s;
+    transition:all 0.5s ease 0s;
+  }
+  .item:hover{
+    background:#c8d8e4;
+    box-shadow: 0 8px 20px 0 #F5C000;
+    -webkit-transition:all 0.5s ease 0s;
+    transition:all 0.5s ease 0s;
+  }
+  .item:hover .item,
+  .item:hover span.icon{
+    background:#fff;
+    border-radius: 10px;
+    -webkit-transition:all 0.5s ease 0s;
+    transition:all 0.5s ease 0s;
+  }
+  .item h6{
+      font-size: 2rem;
+  }
+  .item:hover h6,
+  .item:hover p{
+    color:#F5C000;
+    -webkit-transition:all 0.5s ease 0s;
+    transition:all 0.5s ease 0s;
+  }
+  .item .icon{
+    font-size:40px;
+    margin-bottom: 25px;
+    color:#FA812F;
+    width:90px;
+    height:90px;
+    line-height: 96px;
+    border-radius: 50px;
+  }
+  .item .feature_box_col_one{
+    background:rgba(247,198,5,0.2);
+    color:#52ab98;
+  }
+  .item .feature_box_col_two{
+    background: rgba(255, 77, 28, 0.15);
+    color:#52ab98;
+  }
+  .item .feature_box_col_three{
+    background:rgba(0,147,38,0.15);
+    color:#52ab98;
+  }
+  .item .feature_box_col_four{
+    background:rgba(0,108,255,0.15);
+    color:#52ab98;
+  }
+  .item .feature_box_col_five{
+    background:rgba(146,39,255,0.15);
+    color:#52ab98;
+  }
+  .item .feature_box_col_six{
+    background:rgba(23,39,246,0.15);
+    color:#52ab98;
+  }
+    .item .feature_box_col_seven{
+    background:rgba(0,108,255,0.15);
+    color:#52ab98;
+  }
+  .item .feature_box_col_eight{
+    background:rgba(146,39,255,0.15);
+    color:#52ab98;
+  }
+  .item .feature_box_col_nine{
+    background:rgba(23,39,246,0.15);
+    color:#52ab98;
+  }
+  .item p{
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .item h6{
+    margin-bottom: 20px;
+    color:#2f2f2f;
+  }   
+
+.counters {
+	background-image: url(../images/img03.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+	color: #fff;
+	padding: 40px 20px;
+}
+
+.counters .container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 30px;
+	text-align: center;
+}
+
+.counters i {
+	color: #fff;
+	margin-bottom: 5px;
+}
+
+.counters .counter {
+	font-size: 45px;
+	margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+	.counters .container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.counters .container > div:nth-of-type(1),
+	.counters .container > div:nth-of-type(2) {
+		border-bottom: 1px #FA812F solid;
+		padding-bottom: 20px;
+	}
+}
+
+.section-head-1{
+    margin-bottom: 60px;
+    background-size: 200%;
+    background-position: left;
+
+  }
+  .section-head-1 p{
+    color:#333;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .item{
+    background:#fff;
+    text-align: center;
+    padding:30px 25px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.07);
+    border-radius: 20px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(0,0,0,0.07);
+    -webkit-transition:all 0.7s ease 0s;
+    transition:all 0.7 ease 0s;
+    
+  }
+  .item:hover{
+    background-image: linear-gradient(to bottom right, #66ffcc 0%, #ffccff 100%);
+    background-position: right;
+    transition: background-position 3s;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+    -webkit-transition:all 0.5s ease 0s;
+    transition:all 0.7s ease 0s;
+  }
+  .item:hover .item,
+  .item:hover span.icon{
+    background:#fff;
+    border-radius: 10px;
+    -webkit-transition:all 0.5s ease 0s;
+    transition:all 0.5s ease 0s;
+  }
+  .item:hover h6,
+  .item:hover p{
+    color:#2b6777;
+    -webkit-transition:all 0.5s ease 0s;
+    transition:all 0.5s ease 0s;
+  }
+  .item .icon{
+    font-size:40px;
+    margin-bottom: 25px;
+    color:#FA812F;
+    width:90px;
+    height:90px;
+    line-height: 96px;
+    border-radius: 50px;
+  }
+  .item .feature_box_col_one{
+    background:rgba(247,198,5,0.2);
+    color:#52ab98;
+  }
+  .item .feature_box_col_two{
+    background: rgba(255, 77, 28, 0.15);
+    color:#52ab98;
+    
+  }
+  .item .feature_box_col_three{
+    background:rgba(0,147,38,0.15);
+    color:#52ab98;
+  }
+  .item .feature_box_col_four{
+    background:rgba(0,108,255,0.15);
+    color:#52ab98;
+    
+  }
+  .item .feature_box_col_five{
+    background:rgba(146,39,255,0.15);
+    color:#52ab98;
+  }
+  .item .feature_box_col_six{
+    background:rgba(23,39,246,0.15);
+    color:#52ab98;
+  }
+  .item .feature_box_col_seven{
+    background:rgba(23,39,246,0.15);
+    color:#52ab98;
+  }
+  .item .feature_box_col_eight{
+    background:rgba(23,39,246,0.15);
+    color:#52ab98;
+  }
+  .item .feature_box_col_nine{
+    background:rgba(23,39,246,0.15);
+    color:#52ab98;
+  }
+  .item p{
+    font-size: 15px;
+    font-family: "Varela Round",Arial,"Helvetica Neue",Helvetica,sans-serif;
+    line-height: 26px;
+  }
+  .item h6{
+    margin-bottom: 20px;
+    font-family: "Varela Round",Arial,"Helvetica Neue",Helvetica,sans-serif;
+    color:#2f2f2f;
+  }
+
+/* Penyesuaian responsif (opsional, Bootstrap grid sudah membantu) */
+@media (max-width: 991px) { /* Tablet */
+    .item h6 {
+        font-size: 1.8rem; /* Sedikit lebih kecil di tablet */
+    }
+    .item p {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 767px) { /* Mobile */
+    .item {
+        padding: 25px 20px; /* Padding lebih kecil di mobile */
+    }
+    .item .icon {
+        width: 65px;
+        height: 65px;
+        margin-bottom: 15px;
+    }
+    .item .icon i {
+        font-size: 28px;
+    }
+    .item h6 {
+        font-size: 1.7rem;
+    }
+    .item p {
+        font-size: 1.35rem;
+    }
+}
+
+.about-us-content {
+  padding: 60px 0;
+  font-size: 1.6rem; /* Adjusted for readability */
+  line-height: 1.8;
+}
+
+.about-us-content h2,
+.about-us-content h3 {
+  color: #333; /* Example color */
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-weight: 600; /* Slightly bolder headings */
+}
+
+.about-us-content p {
+  margin-bottom: 20px;
+  color: #555; /* Softer text color */
+  text-align: justify;
+}
+
+.about-us-content ul {
+  list-style: decimal;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  padding-left: 10px; /* Added padding for list items */
+  text-align: justify;
+}
+
+.about-us-content ul li {
+  margin-bottom: 8px; /* Spacing between list items */
+}
+
+.about-us-content .img-fluid {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px; /* Add some space below images if they stack */
+}
+
+/* General heading style for content pages (replaces career-heading style if used more broadly) */
+.content-heading {
+  text-align: center;
+  padding: 4rem 0; /* Increased padding */
+  padding-bottom: 3rem;
+  font-size: 3.5rem;
+  color: var(
+    --black
+  ); /* Assuming --black is defined in your careers.css or other global CSS */
+}
+
+.content-heading .heading {
+  font-size: 3.5rem; /* Adjusted main heading size */
+  color: #F5C000; /* Darker color for heading */
+  margin-bottom: 0.5rem;
+}
+
+.content-heading p {
+  font-size: 1.7rem; /* Adjusted sub-text size */
+  color: #7f8c8d; /* Softer color for sub-text */
+  max-width: 700px; /* Constrain width of sub-text for readability */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-primary {
+  /* Ensuring button style is consistent if not globally defined */
+  background-color: #e8b443;
+  border-color: #d8a933;
+  padding: 10px 25px;
+  font-size: 1.2rem;
+}
+
+.btn-primary:hover {
+  background-color: #d8bc33; /* Darker shade on hover */
+  border-color: #d8a933;
+}
+
+hr.my-5 {
+  /* Style for horizontal rule if needed */
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+  border-top: 1px solid #eee;
+}
+
+.home .wave {
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  height: 11rem;
+  width: 100%;
+  background: url(../images/wave.png);
+  background-size: 100rem 11rem;
+  animation: waves 8s linear infinite;
+  background-repeat: repeat-x;
+}
+
+.home .wave2 {
+  animation-direction: reverse;
+  animation-duration: 6s;
+  opacity: 0.3;
+}
+
+.home .wave3 {
+  animation-duration: 4s;
+  opacity: 0.5;
+}

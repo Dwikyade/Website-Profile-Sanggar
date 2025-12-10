@@ -1,0 +1,496 @@
+/* css/layanan-style.css */
+/* Gaya ini ditujukan untuk bagian layanan yang menggunakan struktur <div class="item"> */
+/* Asumsi: font Poppins dan html font-size: 62.5% sudah diatur secara global oleh CSS utama Anda. */
+
+/* Styling untuk section pembungkus kartu layanan jika diperlukan */
+.services-list-section {
+  /* Kelas ini ada di <section> pembungkus di layanan.html */
+  padding: 40px 0 60px 0;
+  /* background-color: #f9fafb; */ /* Hapus komentar jika ingin latar belakang berbeda untuk section ini */
+}
+
+/* Gaya utama untuk kartu layanan (.item) */
+.item {
+  background: #fff;
+  text-align: center;
+  padding: 30px 25px;
+  box-shadow: 0 0 25px #f5c000;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  margin-top: -2rem;
+  border: 5px solid #f5c000;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.item:hover {
+  background: #c8d8e4;
+  box-shadow: 0 8px 20px 0 #f5c000;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.item:hover .item,
+.item:hover span.icon {
+  background: #fff;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.item h6 {
+  font-size: 2rem;
+}
+.item:hover h6,
+.item:hover p {
+  color: #f5c000;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.item .icon {
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: #fa812f;
+  width: 90px;
+  height: 90px;
+  line-height: 96px;
+  border-radius: 50px;
+}
+.item .feature_box_col_one {
+  background: rgba(247, 198, 5, 0.2);
+  color: #52ab98;
+}
+.item .feature_box_col_two {
+  background: rgba(255, 77, 28, 0.15);
+  color: #52ab98;
+}
+.item .feature_box_col_three {
+  background: rgba(0, 147, 38, 0.15);
+  color: #52ab98;
+}
+.item .feature_box_col_four {
+  background: rgba(0, 108, 255, 0.15);
+  color: #52ab98;
+}
+.item .feature_box_col_five {
+  background: rgba(146, 39, 255, 0.15);
+  color: #52ab98;
+}
+.item .feature_box_col_six {
+  background: rgba(23, 39, 246, 0.15);
+  color: #52ab98;
+}
+.item .feature_box_col_seven {
+  background: rgba(0, 108, 255, 0.15);
+  color: #52ab98;
+}
+.item .feature_box_col_eight {
+  background: rgba(146, 39, 255, 0.15);
+  color: #52ab98;
+}
+.item .feature_box_col_nine {
+  background: rgba(23, 39, 246, 0.15);
+  color: #52ab98;
+}
+.item p {
+  font-size: 15px;
+  line-height: 26px;
+}
+.item h6 {
+  margin-bottom: 20px;
+  color: #2f2f2f;
+}
+
+.counters {
+  background-image: url(../images/img03.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 40px 20px;
+}
+
+.counters .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+  text-align: center;
+}
+
+.counters i {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.counters .counter {
+  font-size: 45px;
+  margin: 10px 0;
+}
+
+@media (max-width: 700px) {
+  .counters .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .counters .container > div:nth-of-type(1),
+  .counters .container > div:nth-of-type(2) {
+    border-bottom: 1px #fa812f solid;
+    padding-bottom: 20px;
+  }
+}
+
+.section-head-1 {
+  margin-bottom: 60px;
+  background-size: 200%;
+  background-position: left;
+}
+.section-head-1 p {
+  color: #333;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+.item {
+  background: #fff;
+  text-align: center;
+  padding: 30px 25px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  margin-bottom: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.07);
+  -webkit-transition: all 0.7s ease 0s;
+  transition: all 0.7 ease 0s;
+}
+.item:hover {
+  background-image: linear-gradient(to bottom right, #66ffcc 0%, #ffccff 100%);
+  background-position: right;
+  transition: background-position 3s;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.7s ease 0s;
+}
+.item:hover .item,
+.item:hover span.icon {
+  background: #fff;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.item:hover h6,
+.item:hover p {
+  color: #2b6777;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+.item .icon {
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: #fa812f;
+  width: 90px;
+  height: 90px;
+  line-height: 96px;
+  border-radius: 50px;
+}
+.item .feature_box_col_one {
+  background: rgba(247, 198, 5, 0.2);
+  color: #52ab98;
+}
+.item .feature_box_col_two {
+  background: rgba(255, 77, 28, 0.15);
+  color: #52ab98;
+}
+.item .feature_box_col_three {
+  background: rgba(0, 147, 38, 0.15);
+  color: #52ab98;
+}
+.item .feature_box_col_four {
+  background: rgba(0, 108, 255, 0.15);
+  color: #52ab98;
+}
+.item .feature_box_col_five {
+  background: rgba(146, 39, 255, 0.15);
+  color: #52ab98;
+}
+.item .feature_box_col_six {
+  background: rgba(23, 39, 246, 0.15);
+  color: #52ab98;
+}
+.item .feature_box_col_seven {
+  background: rgba(23, 39, 246, 0.15);
+  color: #52ab98;
+}
+.item .feature_box_col_eight {
+  background: rgba(23, 39, 246, 0.15);
+  color: #52ab98;
+}
+.item .feature_box_col_nine {
+  background: rgba(23, 39, 246, 0.15);
+  color: #52ab98;
+}
+.item p {
+  font-size: 15px;
+  font-family: "Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 26px;
+}
+.item h6 {
+  margin-bottom: 20px;
+  font-family: "Varela Round", Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: #2f2f2f;
+}
+
+/* Penyesuaian responsif (opsional, Bootstrap grid sudah membantu) */
+@media (max-width: 991px) {
+  /* Tablet */
+  .item h6 {
+    font-size: 1.8rem; /* Sedikit lebih kecil di tablet */
+  }
+  .item p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 767px) {
+  /* Mobile */
+  .item {
+    padding: 25px 20px; /* Padding lebih kecil di mobile */
+  }
+  .item .icon {
+    width: 65px;
+    height: 65px;
+    margin-bottom: 15px;
+  }
+  .item .icon i {
+    font-size: 28px;
+  }
+  .item h6 {
+    font-size: 1.7rem;
+  }
+  .item p {
+    font-size: 1.35rem;
+  }
+}
+
+/* CSS untuk deskripsi detail layanan (tambahkan ke services.css atau file baru) */
+
+.service-card {
+  /* Pastikan service-card memiliki display flex column jika belum */
+  display: flex;
+  flex-direction: column;
+  /* height: auto; Dihapus agar kartu bisa memanjang jika perlu */
+  /* height: 100%; Masih bisa digunakan jika ingin kartu dalam satu baris sama tinggi awalnya */
+}
+
+.service-card p.deskripsi-singkat {
+  flex-grow: 1; /* Agar deskripsi singkat mengisi ruang sebelum tombol */
+  margin-bottom: 15px; /* Jarak ke tombol toggle */
+}
+
+.btn-toggle-detail {
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: #f0f0f0; /* Warna latar tombol, sesuaikan */
+  color: #333; /* Warna teks tombol */
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.4rem; /* Ukuran font tombol */
+  font-weight: 500;
+  text-align: center;
+  margin-top: auto; /* Mendorong tombol ke bawah jika deskripsi singkat bervariasi */
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  border: 1px solid #ddd;
+}
+
+.btn-toggle-detail:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+.btn-toggle-detail .toggle-icon {
+  margin-left: 8px;
+  transition: transform 0.3s ease;
+}
+
+.btn-toggle-detail.open .toggle-icon {
+  transform: rotate(180deg); /* Ikon panah berputar saat terbuka */
+}
+
+.layanan-detail-deskripsi {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9; /* Latar belakang 'rectangle dalam' */
+  border-radius: 8px;
+  border: 1px solid #eee;
+  text-align: left; /* Ratakan kiri untuk deskripsi panjang */
+  font-size: 1.4rem; /* Ukuran font deskripsi panjang */
+  line-height: 1.7;
+  color: #444;
+}
+
+.layanan-detail-deskripsi h4 {
+  font-size: 1.7rem;
+  color: #333; /* Warna subjudul di deskripsi detail */
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.layanan-detail-deskripsi ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.layanan-detail-deskripsi ul li {
+  margin-bottom: 6px;
+}
+
+.detail-separator {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0)
+  );
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Pastikan teks di deskripsi detail tidak di-capitalize jika ada global style */
+.layanan-detail-deskripsi p,
+.layanan-detail-deskripsi ul li {
+  text-transform: none;
+}
+.service-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Membuat semua kartu dalam satu baris memiliki tinggi yang sama (setinggi kartu terpanjang) */
+  background-color: #ffffff;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+  border: 1px solid #eeeeee;
+  text-align: center;
+  margin-bottom: 30px;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon-container {
+  /* Gaya ini seharusnya sudah ada */
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+.service-icon-container.icon-bg-web {
+  background-color: #fef6e8;
+}
+.service-icon-container.icon-bg-web i {
+  color: #fdbf60;
+}
+.service-icon-container.icon-bg-mobile {
+  background-color: #e9f7f7;
+}
+.service-icon-container.icon-bg-mobile i {
+  color: #4ecdc4;
+}
+.service-icon-container.icon-bg-marketing {
+  background-color: #eaf7ee;
+}
+.service-icon-container.icon-bg-marketing i {
+  color: #5dbb63;
+}
+
+.service-icon-container i {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.service-card h3 {
+  /* Gaya ini seharusnya sudah ada */
+  font-size: 2.2rem; /* Sesuaikan dengan kebutuhan */
+  color: #343a40;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.service-card p.deskripsi-layanan {
+  /* Untuk deskripsi singkat awal */
+  font-size: 1.5rem; /* Sesuaikan dengan kebutuhan */
+  color: #6c757d;
+  line-height: 1.65;
+  margin-bottom: 15px; /* Jarak ke pemisah atau deskripsi panjang */
+  flex-grow: 0; /* Hapus flex-grow jika ada sebelumnya dari p deskripsi singkat */
+  text-align: center; /* Atau left jika lebih sesuai */
+  text-transform: none; /* Pastikan tidak capitalize jika ada global style */
+}
+
+hr.detail-separator-layanan {
+  /* Gaya untuk pemisah, opsional */
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0)
+  );
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.deskripsi-panjang-content {
+  /* Kontainer untuk bagian deskripsi panjang */
+  text-align: justify; /* Rata kiri untuk keterbacaan deskripsi panjang */
+  font-size: 1.45rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.deskripsi-panjang-content h4 {
+  font-size: 1.8rem; /* Subjudul di dalam deskripsi panjang */
+  color: #333;
+  margin-top: 10px; /* Jarak dari hr atau deskripsi singkat */
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.deskripsi-panjang-content ul {
+  list-style-position: outside;
+  padding-left: 20px; /* Indentasi untuk list */
+  margin-bottom: 15px;
+}
+.deskripsi-panjang-content ul li {
+  margin-bottom: 6px;
+}
+.home .wave {
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  height: 11rem;
+  width: 100%;
+  background: url(../images/wave.png);
+  background-size: 100rem 11rem;
+  animation: waves 8s linear infinite;
+  background-repeat: repeat-x;
+}
+
+.home .wave2 {
+  animation-direction: reverse;
+  animation-duration: 6s;
+  opacity: 0.3;
+}
+
+.home .wave3 {
+  animation-duration: 4s;
+  opacity: 0.5;
+}

@@ -1,0 +1,271 @@
+/* css/galeri-style.css */
+/* Gaya khusus untuk halaman Galeri */
+
+/* Gaya untuk Banner Judul Halaman Galeri */
+#page-banner-galeri.home {
+  min-height: 30vh;
+  background-image: none;
+  background-color: #f8f9fa; /* Warna latar banner, sesuaikan jika perlu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-banner-galeri.home h1.heading {
+  padding-top: 8rem; /* Sesuaikan jika perlu, dari inline style sebelumnya */
+  color: #F5C000; /* Warna teks judul banner, atau #F5C000 jika ingin kuning */
+  font-size: 2.5rem; /* Ukuran font judul banner */
+}
+
+/* Gaya untuk bagian judul utama halaman Galeri (di bawah banner) */
+#galeri-page-heading.content-heading {
+  text-align: center;
+  padding: 3rem 0 2rem 0;
+}
+/* h1.heading di dalam .content-heading akan mengambil gaya dari .heading global (kuning) */
+
+#galeri-page-heading.content-heading p {
+  font-size: 1.8rem; /* Konsisten dengan .section-head p dari CSS utama Anda */
+  color: #6c757d;
+  max-width: 850px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.7;
+  text-transform: none; /* Agar deskripsi tidak capitalize */
+}
+
+/* Gaya untuk section utama galeri */
+.galeri-section {
+  padding: 20px 0 50px 0;
+}
+
+.galeri-kategori {
+  margin-bottom: 50px;
+}
+
+.kategori-judul {
+  font-family: "Poppins", sans-serif; /* Pastikan font konsisten */
+  font-size: 2.6rem; /* Ukuran judul kategori */
+  color: #333; /* Warna judul kategori, bisa juga #F5C000 */
+  text-align: center;
+  margin-bottom: 35px;
+  padding-bottom: 15px;
+  position: relative;
+  font-weight: 600;
+}
+
+.kategori-judul::after {
+  /* Garis bawah dekoratif untuk judul kategori */
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #f5c000; /* Warna kuning tema Anda */
+  margin: 10px auto 0;
+}
+
+.galeri-item {
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Bayangan halus untuk setiap item */
+  position: relative; /* Untuk overlay */
+}
+
+.galeri-item a {
+  display: block;
+  position: relative;
+}
+
+.galeri-item img.img-fluid {
+  width: 100%;
+  height: auto; /* Tinggi thumbnail yang seragam */
+  object-fit: cover; /* Gambar akan menutupi area, mungkin terpotong */
+  border-radius: 8px; /* Jika .galeri-item juga memiliki radius */
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.galeri-item a:hover img.img-fluid {
+  transform: scale(1.08); /* Efek zoom pada hover */
+  opacity: 0.7; /* Gambar sedikit redup saat hover */
+}
+
+/* Overlay dengan ikon saat hover (Opsional) */
+.galeri-item a::before {
+  content: "\f00e"; /* ikon search-plus dari Font Awesome */
+  font-family: "Font Awesome 5 Free"; /* Pastikan Font Awesome 5 digunakan */
+  font-weight: 900; /* Solid icon */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  color: #ffffff;
+  font-size: 3.5rem; /* Ukuran ikon overlay */
+  opacity: 0;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  z-index: 1; /* Di atas gambar */
+  pointer-events: none; /* Agar tidak menghalangi klik link */
+}
+
+.galeri-item a:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+
+
+
+/* Penyesuaian untuk Lightbox (jika perlu) */
+body.lb-disable-scrolling {
+  overflow: hidden; /* Mencegah scrolling saat lightbox aktif */
+}
+
+.lb-data .lb-caption {
+  font-family: "Poppins", sans-serif !important; /* Memastikan font Poppins */
+  font-size: 1.5rem !important; /* Ukuran teks caption di lightbox */
+  font-weight: 400 !important;
+  line-height: 1.4 !important;
+}
+
+.lb-data .lb-number {
+  font-family: "Poppins", sans-serif !important;
+  font-size: 1.2rem !important;
+}
+/* Tambahan/override CSS jika perlu, atau pastikan ada di file CSS Anda */
+.galeri-section {
+  padding: 40px 0;
+}
+.galeri-kategori {
+  margin-bottom: 50px;
+}
+.kategori-judul {
+  font-size: 2.8rem; /* Sesuaikan */
+  color: #333; /* Atau #F5C000 */
+  text-align: center;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 600;
+}
+.kategori-judul::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #f5c000; /* Warna tema */
+  margin: 10px auto 0;
+}
+.galeri-item {
+  margin-bottom: 30px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.galeri-item a {
+  position: relative; /* Diperlukan agar ikon bisa diposisikan di atasnya */
+    display: block;
+}
+.play-icon-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3); /* Lapisan gelap transparan */
+    opacity: 0; /* Sembunyi secara default */
+    transition: opacity 0.3s ease;
+}
+
+.galeri-item a:hover .play-icon-overlay {
+    opacity: 1; /* Tampilkan ikon saat thumbnail di-hover */
+}
+
+.play-icon-overlay i {
+    font-size: 4rem; /* Ukuran ikon play */
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+.galeri-item img.img-fluid {
+  width: 100%;
+  height: auto; /* Tinggi seragam untuk thumbnail */
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+.galeri-item a:hover img.img-fluid {
+  transform: scale(1.08);
+  opacity: 0.85;
+}
+.galeri-item a::before {
+  /* Overlay ikon zoom opsional */
+  content: "\f00e";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  color: #fff;
+  font-size: 3.5rem;
+  opacity: 0;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+.galeri-item a:hover::before {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.home .wave {
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  height: 11rem;
+  width: 100%;
+  background: url(../images/wave.png);
+  background-size: 100rem 11rem;
+  animation: waves 8s linear infinite;
+  background-repeat: repeat-x;
+}
+
+.home .wave2 {
+  animation-direction: reverse;
+  animation-duration: 6s;
+  opacity: 0.3;
+}
+
+.home .wave3 {
+  animation-duration: 4s;
+  opacity: 0.5;
+}
+
+.galeri-carousel .owl-nav {
+            margin-top: 10px;
+            text-align: center;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .galeri-carousel .owl-nav button.owl-prev,
+        .galeri-carousel .owl-nav button.owl-next {
+            width: 40px;
+            height: 40px;
+            margin: 0 10px;
+            padding: 0 !important;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #f0f0f0 !important;
+            color: #333 !important;
+            font-size: 1.2rem !important;
+            transition: all 0.3s ease;
+        }
+        .galeri-carousel .owl-nav button:hover {
+            background: var(--admin-primary-color, #F5C000) !important;
+            color: white !important;
+        }
+        .galeri-carousel .owl-dots {
+            margin-top: 15px;
+        }

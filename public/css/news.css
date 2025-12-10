@@ -1,0 +1,339 @@
+/* css/berita-style.css */
+/* Gaya khusus untuk Halaman Berita & Agenda */
+.pagination-nav {
+  margin-top: 30px;
+  text-align: center;
+}
+.pagination-nav a,
+.pagination-nav span {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.pagination-nav a.active,
+.pagination-nav span.active {
+  background-color: #f5c000; /* Warna tema Anda */
+  color: white;
+  border-color: #f5c000;
+}
+/* Banner Judul Halaman Berita */
+#page-banner-berita.home {
+  min-height: 30vh;
+  background-image: none; /* Hapus jika .home sudah punya gambar default yang ingin dipakai */
+  background-color: #f8f9fa; /* Warna latar banner */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-banner-berita.home h1.heading {
+  padding-top: 8rem;
+  color: #F5C000; /* Warna judul di banner */
+  font-size: 2.5rem;
+}
+
+/* Judul Utama Halaman Berita (di bawah banner) */
+#berita-page-heading.content-heading {
+  text-align: center;
+  padding: 3rem 0 2rem 0;
+}
+/* h1.heading di dalamnya akan mengambil gaya kuning dari CSS utama Anda */
+
+#berita-page-heading.content-heading p {
+  /* Deskripsi di bawah judul utama */
+  font-size: 1.8rem;
+  color: #6c757d;
+  max-width: 850px;
+  margin: 0 auto 2rem auto;
+  line-height: 1.7;
+  text-transform: none;
+}
+
+/* Section utama halaman berita */
+.berita-section {
+  padding: 20px 0 50px 0;
+}
+
+/* Gaya untuk Sub Judul (misal: "Pendaftaran Anggota Baru", "Agenda Kegiatan") */
+.sub-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.8rem; /* Ukuran sub judul */
+  color: #F5C000; /* Warna sub judul, bisa juga #F5C000 */
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.sub-heading::after {
+  /* Garis bawah dekoratif */
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+  background-color: #f5c000; /* Warna tema Anda */
+  margin: 8px auto 0;
+}
+
+/* Bagian Pengumuman Penting (misal: Pendaftaran) */
+.pengumuman-penting {
+  background-color: #fff9e6; /* Latar kuning sangat muda */
+  padding: 30px 25px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  text-align: center;
+  border: 1px solid #feeec8; /* Border kuning muda */
+  box-shadow: 0 4px 15px rgba(245, 192, 0, 0.1);
+}
+
+.pengumuman-penting img.img-fluid {
+  max-height: 350px; /* Batas tinggi gambar banner pengumuman */
+  width: auto; /* Agar rasio aspek terjaga */
+  max-width: 100%; /* Agar tidak melebihi kontainer */
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.pengumuman-penting .sub-heading {
+  /* Sedikit penyesuaian untuk sub-heading di sini */
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 2.6rem;
+  color: #f5c000; /* Warna kuning tema */
+}
+.pengumuman-penting .sub-heading::after {
+  background-color: #e0ac00;
+}
+
+.pengumuman-penting p {
+  font-size: 1.7rem;
+  color: #5f5f5f;
+  margin-bottom: 25px;
+  line-height: 1.75;
+  text-transform: none;
+}
+/* Tombol di pengumuman akan menggunakan .btn dari CSS utama Anda */
+/* Jika ingin gaya tombol spesifik di sini, uncomment dan sesuaikan:
+.pengumuman-penting .btn {
+    background-color: #F5C000;
+    color: white;
+    padding: 10px 25px;
+    font-size: 1.6rem;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    border: none;
+}
+.pengumuman-penting .btn:hover {
+    background-color: #e0ac00;
+    color: white;
+}
+*/
+
+/* Bagian Agenda Kegiatan */
+.agenda-kegiatan {
+  margin-bottom: 50px;
+}
+
+.agenda-item {
+  background-color: #ffffff;
+  padding: 20px 25px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.07);
+  border-left: 5px solid #f5c000; /* Aksen warna tema */
+  transition: transform 0.2s ease-out, box-shadow 0.2s ease-out;
+}
+.agenda-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.1);
+}
+
+.agenda-item h4 {
+  font-size: 2rem; /* Ukuran judul agenda */
+  color: #d3a400; /* Warna tema lebih gelap untuk judul agenda */
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.agenda-item p {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 7px;
+  line-height: 1.6;
+  text-transform: none;
+}
+
+.agenda-item p i.fas {
+  /* Ikon di agenda */
+  margin-right: 10px;
+  color: #f5c000;
+  width: 18px; /* Agar ikon sejajar */
+  text-align: center;
+}
+
+/* Bagian Berita Terbaru (Listicle/Blog) */
+.berita-terbaru {
+  margin-bottom: 30px;
+}
+
+.berita-post {
+  background-color: #fff;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden; /* Untuk float/flexbox di dalamnya */
+  transition: box-shadow 0.3s ease;
+}
+.berita-post:hover {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+}
+
+.berita-post .row {
+  margin-left: 0; /* Reset Bootstrap gutter jika perlu */
+  margin-right: 0;
+}
+.berita-post .row > [class^="col-"] {
+  /* Reset Bootstrap gutter jika perlu */
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.berita-thumb-container {
+  position: relative;
+  overflow: hidden; /* Untuk efek zoom pada gambar */
+}
+
+.berita-thumb {
+  width: 100%;
+  height: 220px; /* Tinggi thumbnail berita */
+  object-fit: cover;
+  display: block; /* Menghapus spasi bawah img */
+  transition: transform 0.3s ease;
+}
+.berita-post:hover .berita-thumb {
+  transform: scale(1.05); /* Efek zoom pada gambar saat card dihover */
+}
+
+.berita-content {
+  padding: 20px 25px;
+}
+
+.berita-post h3 {
+  font-size: 2.1rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 8px;
+  line-height: 1.35;
+}
+
+.berita-post h3 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.berita-post h3 a:hover {
+  color: #f5c000; /* Warna tema saat hover judul */
+}
+
+.berita-meta {
+  font-size: 1.3rem;
+  color: #888;
+  margin-bottom: 12px;
+  display: block; /* Agar mengambil baris sendiri */
+}
+
+.berita-meta i.fas {
+  margin-right: 6px;
+}
+.berita-meta span {
+  /* Untuk pemisah antar meta item */
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.berita-post .excerpt {
+  /* Paragraf excerpt */
+  font-size: 1.5rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  text-transform: none;
+}
+
+.btn-baca-selengkapnya {
+  font-size: 1.45rem;
+  color: #f5c000; /* Warna tema */
+  font-weight: 500;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.2s ease;
+}
+
+.btn-baca-selengkapnya:hover {
+  color: #d3a400; /* Warna tema lebih gelap */
+  text-decoration: none; /* Atau tambahkan underline jika suka */
+}
+.btn-baca-selengkapnya i.fas {
+  /* Ikon panah */
+  margin-left: 5px;
+  transition: transform 0.2s ease-out;
+}
+.btn-baca-selengkapnya:hover i.fas {
+  transform: translateX(3px);
+}
+
+.pagination-nav {
+  margin-top: 30px;
+  text-align: center;
+}
+.pagination-nav a,
+.pagination-nav span {
+  margin: 0 5px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  color: #333;
+  text-decoration: none;
+  border-radius: 4px;
+}
+.pagination-nav a.active,
+.pagination-nav span.active {
+  background-color: #f5c000; /* Warna tema Anda */
+  color: white;
+  border-color: #f5c000;
+}
+.berita-thumb {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+} /* Contoh styling thumb */
+
+.home .wave {
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  height: 11rem;
+  width: 100%;
+  background: url(../images/wave.png);
+  background-size: 100rem 11rem;
+  animation: waves 8s linear infinite;
+  background-repeat: repeat-x;
+}
+
+.home .wave2 {
+  animation-direction: reverse;
+  animation-duration: 6s;
+  opacity: 0.3;
+}
+
+.home .wave3 {
+  animation-duration: 4s;
+  opacity: 0.5;
+}
